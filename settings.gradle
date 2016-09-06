@@ -1,0 +1,9 @@
+rootProject.name = 'GradleProjects02'
+include 'todo-model'
+include 'todo-repository'
+include 'todo-web'
+
+rootProject.children.each{
+    it.buildFileName = it.name+".gradle"-'todo-'
+}
+
